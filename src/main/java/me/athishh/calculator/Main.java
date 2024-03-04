@@ -31,25 +31,30 @@ public class Main {
 
             BigDecimal result;
             switch (operation.toLowerCase()) {
-                case "add":
+                case "+" : case "sum": case "add": case "addition":
                     result = calculator.add(numbers);
                     break;
-                case "subtract":
+
+                case "-": case "sub": case "minus": case "subtract":
                     result = calculator.subtract(numbers);
                     break;
-                case "multiply":
+
+                case "*": case "multiply": case "times": case "product": case "x": case "into":
                     result = calculator.multiply(numbers);
                     break;
-                case "divide":
+
+                case "divide": case "/": case "div": case "by":
                     result = calculator.divide(numbers);
                     break;
-                case "exponent":
+
+                case "exponent": case "^": case "power": case "pow": case "exp": case "raised": case "to the power of": case "to the power":
                     if (numbers.length != 2) {
                         System.out.println("Exponent operation only supports 2 numbers.");
                         continue;
                     }
                     result = calculator.exponent(numbers[0], numbers[1].intValue());
                     break;
+
                 default:
                     System.out.println("Invalid operation.");
                     continue;
