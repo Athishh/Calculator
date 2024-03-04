@@ -1,2 +1,2 @@
 # Calculator
- A simple high precision calculator for school work
+ A simple unlimited precision calculator for school work
